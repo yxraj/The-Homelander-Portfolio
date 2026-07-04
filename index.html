@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Homelander — The Most Powerful Developer in the World</title>
+<meta name="description" content="Full-stack engineer. Unmatched precision. I build products that dominate." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- Custom cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Particle background -->
+<div class="particle-bg" id="particleBg"></div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Section navigation">
+  <div class="navbar-inner">
+    <button class="logo-btn" data-nav="home" aria-label="Go to Home">
+      <span class="logo-dot"></span>
+      <span class="logo-text text-glow-red">Homelander</span>
+    </button>
+
+    <ul class="nav-links" role="tablist" aria-label="Portfolio sections">
+      <li role="presentation"><button class="nav-link active" data-nav="home" role="tab" aria-selected="true">Home<span class="nav-underline"></span></button></li>
+      <li role="presentation"><button class="nav-link" data-nav="about" role="tab" aria-selected="false">About<span class="nav-underline"></span></button></li>
+      <li role="presentation"><button class="nav-link" data-nav="powers" role="tab" aria-selected="false">Powers<span class="nav-underline"></span></button></li>
+      <li role="presentation"><button class="nav-link" data-nav="conquests" role="tab" aria-selected="false">Conquests<span class="nav-underline"></span></button></li>
+      <li role="presentation"><button class="nav-link" data-nav="stats" role="tab" aria-selected="false">Stats<span class="nav-underline"></span></button></li>
+      <li role="presentation"><button class="nav-link" data-nav="testimonials" role="tab" aria-selected="false">Testimonials<span class="nav-underline"></span></button></li>
+      <li role="presentation"><button class="nav-link" data-nav="contact" role="tab" aria-selected="false">Contact<span class="nav-underline"></span></button></li>
+    </ul>
+
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+      <svg id="menuIconOpen" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg id="menuIconClose" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile dropdown -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><button class="mobile-nav-link active" data-nav="home">Home</button></li>
+    <li><button class="mobile-nav-link" data-nav="about">About</button></li>
+    <li><button class="mobile-nav-link" data-nav="powers">Powers</button></li>
+    <li><button class="mobile-nav-link" data-nav="conquests">Conquests</button></li>
+    <li><button class="mobile-nav-link" data-nav="stats">Stats</button></li>
+    <li><button class="mobile-nav-link" data-nav="testimonials">Testimonials</button></li>
+    <li><button class="mobile-nav-link" data-nav="contact">Contact</button></li>
+  </ul>
+</div>
+
+<!-- Section viewport -->
+<div class="section-viewport">
+
+  <!-- HOME / HERO -->
+  <section class="section" id="section-home" data-section="home">
+    <div class="hero">
+      <div class="hero-bg">
+        <div class="hero-bg-overlay-1"></div>
+        <div class="hero-bg-overlay-2"></div>
+        <div class="hero-bg-img" style="background-image:url('assets/homelander_hero.jpg')"></div>
+      </div>
+      <div class="hero-ambient-glow"></div>
+      <div class="hero-scan-x"></div>
+
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>Undisputed #1</span>
+          <span class="badge-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>Zero Downtime</span>
+          <span class="badge-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg>Undefeated Since Day One</span>
+        </div>
+
+        <div class="hero-title-block">
+          <span class="hero-eyebrow">Broadcast Transmission 001</span>
+          <h1 class="hero-title glitch-effect" data-text="HOMELANDER">HOMELANDER</h1>
+        </div>
+
+        <p class="hero-sub">The <span class="accent-red text-glow-red">Most Powerful</span> Developer in the World.</p>
+        <p class="hero-desc">Full-stack engineer. Unmatched precision. I build products that dominate — no exceptions, no weaknesses, no downtime.</p>
+
+        <div class="hero-stat-row">
+          <span><span class="accent-red bold">8</span> Live Products Deployed</span>
+          <span class="divider">|</span>
+          <span><span class="accent-gold bold">427</span> Systems Conquered</span>
+          <span class="divider">|</span>
+          <span><span class="accent-red bold">0</span> Weaknesses Detected</span>
+        </div>
+
+        <div class="hero-line"></div>
+
+        <div class="hero-cta">
+          <button class="btn-primary" data-nav="conquests">View My Conquests</button>
+          <button class="btn-outline" data-nav="contact">Summon Me</button>
+        </div>
+
+        <button class="scroll-cue" data-nav="about" aria-label="Scroll to About section">
+          <span>Select a section above</span>
+          <svg class="chevron-bounce" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="section-about" data-section="about" hidden>
+    <div class="about">
+      <div class="about-accent-line"></div>
+      <div class="about-wrap">
+        <div class="about-left">
+          <span class="eyebrow-gold">Personal Transmission</span>
+          <h2 class="section-title">I am <br><span class="accent-red text-glow-red">Better.</span></h2>
+          <div class="gold-bar"></div>
+          <div class="tag-row">
+            <span class="tag-chip">React</span>
+            <span class="tag-chip">Node.js</span>
+            <span class="tag-chip">TypeScript</span>
+            <span class="tag-chip">AI</span>
+            <span class="tag-chip">Cloud</span>
+            <span class="tag-chip">UI/UX</span>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <p>You want to know about me? Fine. I don't write <span class="white bold">"clean code."</span> I write <span class="white extrabold">perfect</span> code. While you're debugging your pathetic little components, I've already deployed the entire infrastructure.</p>
+          <p>I'm not just another developer. I'm the one they call when everything is burning down. I don't use frameworks; frameworks <span class="accent-gold bold">bend to my will.</span> I'm the hero this industry deserves, whether it knows it or not.</p>
+          <p class="callout-line">I am the god of this digital world.</p>
+
+          <div class="fact-grid">
+            <div class="fact-card"><p class="fact-label">Based In</p><p class="fact-value">Vought Tower</p></div>
+            <div class="fact-card"><p class="fact-label">Experience</p><p class="fact-value">∞ Years</p></div>
+            <div class="fact-card"><p class="fact-label">Status</p><p class="fact-value">Undefeated</p></div>
+          </div>
+
+          <div class="power-levels">
+            <p class="fact-label">Power Levels</p>
+            <div class="power-row">
+              <div class="power-header"><span>React &amp; TypeScript</span><span class="accent-red bold">99%</span></div>
+              <div class="power-track"><div class="power-fill" style="width:99%"></div></div>
+            </div>
+            <div class="power-row">
+              <div class="power-header"><span>Cloud &amp; DevOps</span><span class="accent-red bold">97%</span></div>
+              <div class="power-track"><div class="power-fill" style="width:97%"></div></div>
+            </div>
+            <div class="power-row">
+              <div class="power-header"><span>Backend &amp; APIs</span><span class="accent-red bold">96%</span></div>
+              <div class="power-track"><div class="power-fill" style="width:96%"></div></div>
+            </div>
+            <div class="power-row">
+              <div class="power-header"><span>Patience for Bad Code</span><span class="accent-red bold">2%</span></div>
+              <div class="power-track"><div class="power-fill" style="width:2%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POWERS / SKILLS -->
+  <section class="section" id="section-powers" data-section="powers" hidden>
+    <div class="powers">
+      <div class="powers-radial"></div>
+      <div class="powers-wrap">
+        <div class="powers-header">
+          <span class="eyebrow-gold">Classified Capabilities</span>
+          <h2 class="section-title">My <span class="accent-gold text-glow-gold">Powers</span></h2>
+          <div class="threat-badge">
+            <span class="pulse-dot-red"></span>
+            <span class="accent-red">Threat Level: Maximum</span>
+          </div>
+        </div>
+
+        <div class="powers-grid">
+          <div class="power-card">
+            <span class="corner-tl"></span><span class="corner-br"></span>
+            <div class="power-card-inner">
+              <div class="power-icon-box red"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="accent-red"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+              <div>
+                <p class="power-subtitle red">React &amp; TypeScript</p>
+                <h3 class="power-title">Laser Focus</h3>
+                <p class="power-desc">I don't just see the code — I burn through it. My React architecture is flawless, precise, and destroys bugs on contact.</p>
+                <div class="power-mini-track"><div class="power-mini-fill red"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="power-card">
+            <span class="corner-tl"></span><span class="corner-br"></span>
+            <div class="power-card-inner">
+              <div class="power-icon-box gold"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="accent-gold"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+              <div>
+                <p class="power-subtitle gold">Cloud &amp; DevOps</p>
+                <h3 class="power-title">Flight &amp; Speed</h3>
+                <p class="power-desc">Cloud deployments so fast you won't even see them happen. CI/CD pipelines that break the sound barrier.</p>
+                <div class="power-mini-track"><div class="power-mini-fill gold"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="power-card">
+            <span class="corner-tl"></span><span class="corner-br"></span>
+            <div class="power-card-inner">
+              <div class="power-icon-box red"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="accent-red"><path d="M12 2 3 6v6c0 5.5 3.8 10 9 12 5.2-2 9-6.5 9-12V6z"/></svg></div>
+              <div>
+                <p class="power-subtitle red">Security &amp; Uptime</p>
+                <h3 class="power-title">Invincibility</h3>
+                <p class="power-desc">Zero downtime. Unbreakable security. Go ahead, try to DDOS me. It only tickles.</p>
+                <div class="power-mini-track"><div class="power-mini-fill red"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="power-card">
+            <span class="corner-tl"></span><span class="corner-br"></span>
+            <div class="power-card-inner">
+              <div class="power-icon-box gold"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="accent-gold"><path d="M13 2L3 14h7l-1 8 11-14h-7l1-6z"/></svg></div>
+              <div>
+                <p class="power-subtitle gold">UX &amp; Design</p>
+                <h3 class="power-title">Mind Control</h3>
+                <p class="power-desc">UX design so dominant that users have no choice but to convert. I tell them what to click, and they comply.</p>
+                <div class="power-mini-track"><div class="power-mini-fill gold"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="power-card">
+            <span class="corner-tl"></span><span class="corner-br"></span>
+            <div class="power-card-inner">
+              <div class="power-icon-box red"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="accent-red"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></div>
+              <div>
+                <p class="power-subtitle red">Backend &amp; APIs</p>
+                <h3 class="power-title">Super Strength</h3>
+                <p class="power-desc">APIs that never buckle under pressure. Databases optimised to military-grade specifications. Nothing breaks.</p>
+                <div class="power-mini-track"><div class="power-mini-fill red"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="power-card">
+            <span class="corner-tl"></span><span class="corner-br"></span>
+            <div class="power-card-inner">
+              <div class="power-icon-box gold"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="accent-gold"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+              <div>
+                <p class="power-subtitle gold">AI &amp; Automation</p>
+                <h3 class="power-title">Omniscience</h3>
+                <p class="power-desc">I don't just write code — I command machines to write it for me. AI integration is second nature to a god.</p>
+                <div class="power-mini-track"><div class="power-mini-fill gold"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer-note">And that's just the abilities I let you see.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONQUESTS / PROJECTS -->
+  <section class="section" id="section-conquests" data-section="conquests" hidden>
+    <div class="conquests">
+      <div class="conquests-bg-pattern"></div>
+      <div class="conquests-wrap">
+        <div class="conquests-header">
+          <span class="eyebrow-gold">Proof of Dominance</span>
+          <h2 class="section-title">My <span class="gradient-text">Conquests</span></h2>
+          <div class="conquests-meta">
+            <span><span class="accent-red bold">8</span> Active Deployments</span>
+            <span class="divider">|</span>
+            <span><span class="accent-gold bold">100%</span> Success Rate</span>
+            <span class="divider">|</span>
+            <span><span class="accent-red bold">0</span> Failures Recorded</span>
+          </div>
+        </div>
+
+        <div class="conquests-grid" id="conquestsGrid"></div>
+
+        <p class="footer-note">More conquests classified. Clearance level insufficient.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section" id="section-stats" data-section="stats" hidden>
+    <div class="stats">
+      <div class="stats-glow-left"></div>
+      <div class="stats-glow-right"></div>
+      <div class="stats-wrap">
+        <p class="eyebrow-gold center">Power Level — Classified</p>
+        <h2 class="section-title center">By the <span class="accent-red text-glow-red">Numbers</span></h2>
+
+        <div class="status-badge-wrap">
+          <div class="status-badge">
+            <span class="pulse-dot-green"></span>
+            <span>System Status: All Green</span>
+          </div>
+        </div>
+
+        <div class="stats-grid" id="statsGrid"></div>
+
+        <p class="footer-note">Figures independently verified by Vought International.</p>
+
+        <div class="secondary-stats">
+          <div class="secondary-stat"><p class="secondary-value">&lt; 1hr</p><p class="secondary-label">Response Time</p></div>
+          <div class="secondary-stat"><p class="secondary-value">4 min</p><p class="secondary-label">Avg. Deploy Time</p></div>
+          <div class="secondary-stat"><p class="secondary-value">∞ cups</p><p class="secondary-label">Coffee Consumed</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="section-testimonials" data-section="testimonials" hidden>
+    <div class="testimonials">
+      <div class="quote-mark">&quot;</div>
+      <div class="testimonials-wrap">
+        <div class="testimonials-header">
+          <span class="eyebrow-gold right">Intel from the Field</span>
+          <h2 class="section-title right">What the <span class="accent-red strike">weak</span> mortals say</h2>
+          <div class="rating-row">
+            <div class="stars">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="accent-gold"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="accent-gold"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="accent-gold"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="accent-gold"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="accent-gold"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9"/></svg>
+            </div>
+            <span class="rating-text">5.0 · Feared by All Witnesses</span>
+          </div>
+        </div>
+
+        <div class="testimonials-grid" id="testimonialsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="section-contact" data-section="contact" hidden>
+    <div class="contact">
+      <div class="contact-scan-line"></div>
+      <div class="contact-radial"></div>
+      <div class="contact-wrap">
+        <div class="status-badge green-badge">
+          <span class="pulse-dot-green"></span>
+          <span>Currently Accepting New Missions</span>
+        </div>
+
+        <p class="eyebrow-gold center transmission">Transmission Complete</p>
+
+        <h2 class="bow-down glitch-effect" data-text="BOW DOWN">BOW DOWN</h2>
+
+        <p class="contact-tagline">You don't hire me. <span class="accent-red bold text-glow-red">I allow you to pay me.</span></p>
+
+        <div class="vought-badge">
+          <span class="pulse-dot-red-static"></span>
+          <span>Vought International — Active Operative</span>
+          <span class="pulse-dot-red-static"></span>
+        </div>
+
+        <div class="social-row">
+          <span class="social-link">Email</span>
+          <span class="dot-sep"></span>
+          <span class="social-link">LinkedIn</span>
+          <span class="dot-sep"></span>
+          <span class="social-link">GitHub</span>
+          <span class="dot-sep"></span>
+          <span class="social-link">Twitter</span>
+        </div>
+
+        <div class="quick-facts">
+          <span>Response Time: <span class="accent-gold bold">Under 1 Hour</span></span>
+          <span>Availability: <span class="accent-red bold">Worldwide</span></span>
+          <span>Rate: <span class="accent-gold bold">Whatever I Decide</span></span>
+        </div>
+
+        <div class="contact-footer">
+          <p id="copyrightYear">© 2026 HOMELANDER. All rights reserved.</p>
+          <p>Powered by Vought International</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
